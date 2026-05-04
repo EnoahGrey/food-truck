@@ -18,7 +18,7 @@ app.use(require('./routes/static'))
 app.get("/test", (req, res) => {
   res.send("Server is working")
 })
-
+ 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"))
 })
